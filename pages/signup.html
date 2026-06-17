@@ -1,9 +1,111 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-  </head>
-  <body></body>
+
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up</title>
+        <link rel="stylesheet" href="/styles/home.css" />
+      </head>
+      <body>
+        <header class="loginlogo">
+          <div class="container">
+            <div class="login-img">
+              <img
+                src="/assets/images/loginlogo.svg"
+                alt=""
+                class="loginlogoimg"
+              />
+            </div>
+          </div>
+        </header>
+        <main>
+          <section class="hero-section">
+            <div class="container">
+              <div class="login-content">
+                <!-- login bg -->
+                <div class="login-brand">
+                  <h1 class="login-title">Sign up</h1>
+                  <p class="login-desc">
+                    To get started, you need to sign in here.
+                  </p>
+                </div>
+                <!-- form -->
+                <form class="login-form">
+                  <div class="container">
+                    <div class="form-content">
+                      <div class="login-card">
+                        <!-- name -->
+                         <div class="form-group">
+                          <label for="name" class="form-label">First & Last Name</label>
+                          <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-input"
+                            placeholder="i.e. John Doe"
+                            required
+                          />
+                        </div>
+                        <!-- Email -->
+                        <div class="form-group">
+                          <label for="email" class="form-label">Email</label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="i.e. john@mail.com"
+                            required
+                          />
+                        </div>
+                        <!-- Şifrə -->
+                        <div class="form-group">
+                          <label for="password" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            class="form-input"
+                            placeholder="********"
+                            required
+                          />
+                        </div>
+                        <!-- confirm -->
+                          <div class="form-group">
+                          <label for="password" class="form-label"
+                            >Confirm Password</label
+                          >
+                          <input
+                            type="password"
+                            id="confirmpassword"
+                            name="confirmpassword"
+                            class="form-input"
+                            placeholder="********"
+                            required
+                          />
+                        </div>
+                        <!-- Giriş düyməsi -->
+                        <button type="submit" class="btn-submit">
+                          Create an account
+                        </button>
+                      </div>
+                      <div class="form-foot">
+                        <p class="form-foot-desc">
+                          Don’t have an account?
+                          <a href="/pages/login.html" class="form-foot-link">Sign in now</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main>
+      </body>
+    </html>
+  </body>
 </html>
