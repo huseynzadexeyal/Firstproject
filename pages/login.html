@@ -4,6 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="/styles/home.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="loginlogo">
+      <div class="container">
+        <div class="login-img">
+          <img src="/assets/images/loginlogo.svg" alt="" class="loginlogoimg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="login-content">
+            <!-- login bg -->
+            <div class="login-brand">
+              <h1 class="login-title">Login</h1>
+              <p class="login-desc">
+                To get started, you need to sign in here.
+              </p>
+            </div>
+            <!-- form -->
+            <form class="login-form">
+              <div class="container">
+                <div class="form-content">
+                  <div class="login-card">
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="i.e. john@mail.com"
+                        required
+                      />
+                    </div>
+                    <!-- Şifrə -->
+                    <div class="form-group">
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-input"
+                        placeholder="********"
+                        required
+                      />
+                    </div>
+                    <!-- Giriş düyməsi -->
+                    <button type="submit" class="btn-submit">Sign In</button>
+                  </div>
+                  <div class="form-foot">
+                    <p class="form-foot-desc">
+                      Don’t have an account? <a href="/pages/signup.html">Create an account</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
