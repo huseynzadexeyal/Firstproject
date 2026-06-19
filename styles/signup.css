@@ -50,7 +50,7 @@
 .login-card {
  
   padding: 31px 25px;
-  background-color: #ffffff;
+  background-color:var(--white-color);
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Yumşaq kölgə */
 }
@@ -80,7 +80,6 @@
 
 }
 
-/* İnputun placeholder (bələdçi mətn) rəngi */
 .form-input::placeholder {
   color:var(--text-color);
   border-radius: 8px;
@@ -102,7 +101,7 @@
   font-weight:var(--fw-bold);
   cursor: pointer;
   margin-top: 70px;
-  transition: background-color 0.2s ease;
+  transition: all 0.5s;
 }
 
 
