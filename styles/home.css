@@ -33,6 +33,7 @@
 .navbar-list-link:active {
   color: var(--hover-color);
 }
+/* section 1  */
 .hero-content {
   background-color: var(--background-color);
   display: flex;
@@ -62,6 +63,7 @@
   line-height: var(--lh-h32);
   width: 70%;
 }
+/* section 2 */
 .companions-content {
   display: flex;
   flex-direction: column;
@@ -97,6 +99,7 @@
   padding-bottom: 124px;
   justify-content: center;
 }
+/* section 3 */
 .job-content {
   width: 429px;
 
@@ -122,6 +125,7 @@
   color: var(--white-color);
   opacity: 65%;
 }
+/* section 4 */
 .product-title {
   font-size: var(--fs-s21);
   font-weight: var(--fw-bold);
@@ -159,6 +163,7 @@
   transform: scale(1.1);
   transform: translateY(-12px);
 }
+/* section 5 */
 .category-job {
   background-color: var(--text-color);
 }
@@ -189,14 +194,13 @@
 /* left side / */
 .card-wrap {
   position: relative;
-  width: 540px;
+  width: 425px;
 }
 
 .card {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 .cardimg {
   display: block;
@@ -206,11 +210,12 @@
 /* arxadakı açıq yaşıl kölgə */
 .card-bg {
   position: absolute;
-  top: 40px;
-  left: 40px;
-  width: 100%;
-  height: 100%;
-  background: #ecfdf5;
+  top: 50px;
+  left: 50px;
+  width: 90%;
+  height: 90%;
+  background: #68d585;
+  opacity: 10%;
   border-radius: 12px;
   z-index: -1;
 }
@@ -218,8 +223,8 @@
 /* bildiriş */
 .notify {
   position: absolute;
-  left: -20px;
-  bottom: 190px;
+  left: -30px;
+  bottom: 130px;
   width: 351px;
   background: var(--text-color);
   border-radius: 8px;
@@ -563,10 +568,12 @@
   color: var(--browncard-color);
 }
 /* FOOTER STRUKTURU */
-.site-footer {
+.footer-bg {
   background-color: var(--text-color);
+}
+.site-footer {
   border-top: 4px solid var(--top-border);
-  /* padding: 122px 245px 128px 245px; */
+
   color: var(--white-color);
 }
 
@@ -665,5 +672,323 @@
   }
   50% {
     border-color: #111;
+  }
+}
+
+/* ---------- 900px and below ---------- */
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  .navbar-list,
+  .navbar-list-login {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .brand {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .brand-title {
+    text-align: start;
+  }
+  .brand-desc {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .companions-titles {
+    width: 100%;
+  }
+  .companions-icons {
+    width: 90%;
+    gap: 30px;
+    padding-bottom: 70px;
+  }
+
+  .category-job {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .job-content {
+    width: 90%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+  }
+  .job-content-title {
+    padding-top: 70px;
+  }
+  .product-cards {
+    margin-left: 0;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+  .product {
+    text-align: start;
+    width: 90%;
+    max-width: 380px;
+    padding: 26px 32px 28px 32px;
+  }
+
+  .find-content {
+    flex-direction: column;
+    gap: 80px;
+    text-align: start;
+  }
+  .card-wrap {
+    width: 90%;
+    max-width: 380px;
+  }
+  .notify {
+    bottom: 120px;
+  }
+  .steps {
+    align-items: center;
+    width: 90%;
+  }
+  .step-body-desc {
+    max-width: 100%;
+  }
+
+  .featured-job {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+    gap: 30px;
+  }
+  .featured-job-titles {
+    width: 100%;
+    align-items: center;
+  }
+  .featured-icon {
+    margin: 0;
+  }
+
+  .card-container {
+    /* margin: 0 30px; */
+    flex-wrap: wrap;
+  }
+  .dev-card {
+    width: calc(50% - 20px);
+  }
+  .helps-content {
+    width: 90%;
+    padding: 60px 0 50px 0;
+  }
+
+  .updates-box {
+    width: 90%;
+  }
+  .subscribe-form {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .note {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-flex {
+    flex-wrap: wrap;
+    padding: 70px 40px;
+    gap: 50px;
+  }
+  .footer-brand {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* ---------- 400px and below ---------- */
+@media (max-width: 400px) {
+  .header-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 30px;
+  }
+  /* .container {
+    max-width: 400px;
+    margin: 0 auto;
+  } */
+  .navbar-list {
+    gap: 12px;
+  }
+  .navbar-list-login {
+    gap: 16px;
+  }
+  .navbar-list-link {
+    font-size: 13px;
+  }
+
+  .brand {
+    gap: 14px;
+  }
+  .brand-title {
+    text-align: start;
+    font-size: 32px;
+    line-height: 1.25;
+  }
+  .heroimg {
+    width: 50%;
+  }
+  .brand-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .companions-content {
+    gap: 36px;
+  }
+  .companions-content-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  .companions-content-desc {
+    font-size: 15px;
+    text-align: center;
+  }
+  .companions-icons {
+    gap: 50px;
+    padding-bottom: 50px;
+  }
+
+  .job-content-title {
+    font-size: 24px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .job-content-desc {
+    font-size: 15px;
+    text-align: center;
+
+    padding-left: 20px;
+  }
+  .product {
+    width: 100%;
+    height: auto;
+    padding: 20px 24px;
+    text-align: start;
+  }
+  .product-cards {
+    width: 100%;
+    padding: 0 16px 50px;
+    box-sizing: border-box;
+  }
+
+  .find-title {
+    font-size: 24px;
+  }
+  .find-desc {
+    font-size: 15px;
+    width: 300px;
+  }
+
+  .card {
+    width: 80%;
+  }
+  .notify {
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 60px;
+    width: calc(100% - 10px);
+    padding: 10px 12px;
+  }
+  .notify .big {
+    font-size: 14px;
+  }
+
+  .step {
+    gap: 14px;
+  }
+  .step-body-title {
+    font-size: 17px;
+  }
+  .step-body-desc {
+    font-size: 14px;
+  }
+
+  .featured-title {
+    font-size: 24px;
+  }
+  .featured-desc {
+    font-size: 15px;
+  }
+
+  .card-container {
+    margin: 0 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dev-card {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 24px;
+  }
+
+  .helps-title,
+  .updates-title {
+    font-size: 24px;
+  }
+  .helps-desc,
+  .updates-desc {
+    font-size: 15px;
+  }
+  .helps-cards {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .updates-box {
+    gap: 24px;
+    padding-bottom: 70px;
+  }
+  .newsletter__form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .newsletter__input {
+    width: 100%;
+  }
+  .newsletter__button {
+    padding: 10px 20px;
+  }
+
+  .footer-flex {
+    padding: 10px 10px;
+    /* gap: 36px; */
+    /* text-align: center; */
+    align-items: start;
+    justify-content: center;
+  }
+  .footer-column__title {
+    text-align: center;
+    align-items: center;
+  }
+  .footer-brand__logo {
+    font-size: 22px;
+  }
+  .footer-brand__desc {
+    font-size: 14px;
   }
 }
