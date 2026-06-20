@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url(./reset.css);
-@import url(./variables.css);
+@import url(/global/reset.css);
+@import url(/global/variables.css);
 @import url(/styles/login.css);
 @import url(/styles/about.css);
 @import url(/styles/support.css);
