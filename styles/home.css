@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .navbar-list {
   display: flex;
   justify-content: space-between;
@@ -626,7 +627,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
- 
 }
 
 .footer-column__link {
@@ -637,4 +637,33 @@
 
 .footer-column__link:hover {
   color: var(--hover-color);
+}
+/* Animasiya */
+.typing {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  border-right: 4px solid #111;
+  animation:
+    typing 1.6s steps(13, end) 0.5s forwards,
+    blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10ch;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #111;
+  }
 }
