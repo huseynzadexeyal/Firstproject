@@ -159,3 +159,154 @@
   gap: 30px;
   padding: 0 150px 120px 150px;
 }
+.footer-bg{
+  background-color: var(--text-color);
+}
+/* ---------- 900px and below ---------- */
+@media (max-width: 900px) {
+  .header-content-about {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+
+  .about-hero {
+    width: 90%;
+  }
+  .about-desc {
+    width: 100%;
+  }
+  .about-img {
+    margin-bottom: 80px;
+  }
+  .about-img img {
+    width: 100%;
+  }
+
+  .about-help {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  .about-help-title {
+    width: 90%;
+    margin-right: 0;
+  }
+  .about-help-desc {
+    width: 90%;
+  }
+
+  .about-skill-box {
+    flex-direction: column;
+    padding: 80px 30px;
+    gap: 40px;
+  }
+  .skill-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill-img-right {
+    padding-top: 0;
+  }
+  .skill-titles-box {
+    padding: 0;
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .meet-title-box {
+    padding-top: 70px;
+  }
+  .meet-desc {
+    padding-bottom: 50px;
+  }
+  .cards-container {
+    padding: 0 40px 80px 40px;
+    justify-content: center;
+  }
+  .card-content {
+    width: calc(50% - 15px);
+    text-align: center;
+  }
+  .card-content img {
+    width: 100%;
+  }
+}
+
+/* ---------- 400px and below ---------- */
+@media (max-width: 400px) {
+  .header-content-about {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .about-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+  .about-desc {
+    font-size: 15px;
+    padding-bottom: 24px;
+  }
+  .about-img {
+    margin-bottom: 50px;
+  }
+
+  .about-help {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .about-help-title {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+  .about-help-desc {
+    gap: 24px;
+    font-size: 15px;
+  }
+
+  .about-skill-box {
+    padding: 50px 16px;
+    gap: 24px;
+  }
+  .skill-img {
+    gap: 14px;
+  }
+  .skill-img-left,
+  .skill-img-right {
+    gap: 14px;
+  }
+  .skill-img img {
+    width: 100%;
+    max-width: 140px;
+  }
+  .skill-title {
+    font-size: 26px;
+    line-height: 1.35;
+  }
+  .skill-desc {
+    gap: 24px;
+    font-size: 15px;
+  }
+
+  .meet-title {
+    font-size: 26px;
+  }
+  .meet-desc {
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+  .cards-container {
+    padding: 0 16px 50px 16px;
+    gap: 18px;
+  }
+  .card-content {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
